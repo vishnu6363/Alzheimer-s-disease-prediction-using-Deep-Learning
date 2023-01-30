@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+    <body>
+      <div class="back-round">
+        <div class="container py-3">
+            <header>
+              <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+                  <span class="fs-4">Alzhimer Disease</span>
+                </a>
+          
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                  <a class="me-3 py-2 text-dark text-decoration-none" href="#">Features</a>
+                  <a class="me-3 py-2 text-dark text-decoration-none" href="#">Enterprise</a>
+                  <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
+                  <a class="py-2 text-dark text-decoration-none" href="/">Log Out</a>
+                </nav>
+                
+              </div>
+
+              <div class="container py-5">
+
+                <!-- For demo purpose -->
+                <header class="text-white text-center">
+                    <h1 class="display-4">Uploaded brain MRI image</h1>
+                    
+                    <img src={{url_for('static', filename = 'images/'+ img)}} alt="" width="150" class="mb-4">
+                    <h3 class = "header-text">Model Prediction ---</h3><br><br>
+                        <h3 class = "header-text">{{predictions}}</h3>
+                </header>  
+
+           
+                    
+                   
+            
+                    </div>
+            </div>
+          </header>
+        </div>
+      </div>
+        
+    </body>
+</html>
